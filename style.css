@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+button {
+  all: unset;
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+  text-transform: uppercase;
+  transition: 0.15s;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.btn--primary {
+  background-color: #ebb70a;
+}
+
+.btn--primary:hover {
+  background-color: #f8c10d;
+}
+
+nav {
+  height: 70px;
+
+  padding: 0 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px 0px;
+}
+
+.nav__options {
+  list-style-type: none;
+
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+header {
+  /* 
+        The following line of code gives header height of 100vh - 70px 
+        100vh means the size of your viewport and reason why I substract
+        70px is because navbar height is 70px, so this way the header will
+        take the full height of the viewport, without navbar, and that way
+        the scrollbar won't be displayed.
+    */
+  height: calc(100vh - 70px);
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.page-heading,
+.page-image {
+  width: 50%;
+  padding: 20px;
+}
+
+.page-heading h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.page-heading h1,
+.page-heading p {
+  margin-bottom: 15px;
+}
+
+.page-image img {
+  width: 100%;
+}
+
+.page-content {
+  max-width: 1200px;
+  margin: 30px auto 0;
+  display: flex;
+}
+
+.page-content .articles {
+  width: 80%;
+}
+
+.page-content .sidebar {
+  width: 20%;
+}
+
+.page-content .articles,
+.page-content .sidebar {
+  padding: 20px;
+}
+
+.blog-article {
+  margin-bottom: 50px;
+}
+
+.blog-article h3 {
+  font-size: 2rem;
+}
+
+.article-image {
+  width: 100%;
+  margin: 20px auto 20px;
+}
+
+.article-image img {
+  width: 100%;
+}
+
+.article-text {
+  margin-bottom: 20px;
+}
+
+.article-read-more {
+  padding: 10px;
+  border: 1px solid #ebb70a;
+  border-radius: 10px;
+  color: #ebb70a;
+  transition: 0.15s;
+}
+
+.article-read-more:hover {
+  background-color: #f8c10d;
+  color: #000;
+}
+
+.sidebar h4 {
+  text-transform: uppercase;
+}
+
+.sidebar p {
+  font-size: 0.875rem;
+}
+
+.sidebar p:not(:last-child) {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ebb70a;
+}
